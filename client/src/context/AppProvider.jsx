@@ -20,8 +20,6 @@ export const AppProvider = ({ children }) => {
     cargarUsers();
   }, []);
 
-
-
 const agregarUser = async (data) => {
       const nuevo = await crearUser(data);
       setUsers((prev) => [...prev, nuevo]);
