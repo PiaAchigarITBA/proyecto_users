@@ -11,6 +11,11 @@ app.use(cors())
 // Middleware de Express
 app.use(express.json());
 
+// Ruta de info
+app.get("/", (req, res) => {
+  res.send("API Users funcionando.");
+});
+
 //Rutas a los enpoints de User
 app.use("/api/users",userRoutes)
 
